@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+
+header {
+  margin-block: 50px;
+}
+h1 {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+
+  color: #000000;
+}
+
+h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  text-transform: uppercase;
+
+  color: #000000;
+}
+h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  color: #000000;
+}
+p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.member p {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  writing-mode: vertical-lr;
+  margin-left: 0.5rem;
+}
+.container {
+  margin-inline: auto;
+  width: 80%;
+}
+.flex {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3rem;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.member {
+  display: flex;
+}
+
+.details img {
+  height: auto;
+  max-width: 100%;
+}
+
+.member:nth-child(2n-2) {
+  margin-top: 3rem;
+}
+
+@media (min-width: 50em) {
+  .flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .member:nth-child(2n-2) {
+    margin-top: 0rem;
+  }
+  .member:nth-child(3n-1) {
+    margin-top: 6rem;
+  }
+  .team {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-inline: 1rem;
+  }
+  .details img {
+    height: auto;
+    max-width: 238px;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #a9a9a9;
+}
